@@ -1,4 +1,8 @@
-# MCheckSwift
+# mCheck SDK 
+
+mCheck SDK for ios let you integrate the mobile phone number validation API in mobile devices.
+
+In order to test the sample you need to change the secret key.
 
 [![CI Status](https://img.shields.io/travis/Kurdakrx/MCheckSwift.svg?style=flat)](https://travis-ci.org/Kurdakrx/MCheckSwift)
 [![Version](https://img.shields.io/cocoapods/v/MCheckSwift.svg?style=flat)](https://cocoapods.org/pods/MCheckSwift)
