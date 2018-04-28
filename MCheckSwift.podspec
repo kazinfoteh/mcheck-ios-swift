@@ -24,7 +24,7 @@ mCheck SDK for IOS let you integrate the mobile phone number validation API in m
   s.homepage         = 'https://github.com/kazinfoteh/mcheck-ios-swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Kurdakrx' => 'shopanov.yelnar@gmail.com' }
+  s.author           = { 'KazInfoTeh' => 'http://kazinfoteh.kz' }
   s.source           = { :git => 'https://github.com/kazinfoteh/mcheck-ios-swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
