@@ -39,15 +39,40 @@ self.mCheck = MCheck(aToken: token);
 
 let phone = "+77770000000"
 let smsBody = "Your validation code: [:pin]"; // smsBody is optional param, and maybe is null
-weak var weakSelf = self
 
 self.mCheck.requestValidation(phone: phone, type: .SMS, message: smsBody, callback: {result, error -> Void in
-if (error != nil) {
-return
-}
+    if (error != nil) {
+        return
+    }
 
-print(message: "Success, request ID: " + (result?.id)!)
+    print(message: "Success, request ID: " + (result?.id)!)
 })
+```
+**Verify Pin**
+```swift
+let requestID = "" //request id received from mcheck.requestValidation - response.id
+let pinCode = "" //pin code to check
+
+self.mCheck.verifyValidation(requestId: requestID, pin: pinCode, callback: {result, error -> Void in
+    if (error != nil) {
+        return
+    }
+
+    print(message: "Validated: \(String(describing: result!.validated))")
+})
+```
+**Validation Status**
+```swift
+let requestID = "" //request id received from mcheck.requestValidation - response.id
+
+self.mCheck.checkValidationStatus(requestId: requestID, callback: {result, error -> Void in
+    if (error != nil) {
+        return
+    }
+
+    print(message: "Validation status: \(String(describing: result!.validated))")
+})
+```
 
 ## License
 
