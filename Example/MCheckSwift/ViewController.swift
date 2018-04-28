@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let token = "qxfmvtyhljpsoyukxdtoejky"; //automatically generated token from https://isms.center
+        let token = "YOUR_TOKEN"; //automatically generated token from https://isms.center
         
         self.mCheck = MCheck(aToken: token);
     }

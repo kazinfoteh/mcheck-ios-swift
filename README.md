@@ -24,9 +24,30 @@ it, simply add the following line to your Podfile:
 pod 'MCheckSwift'
 ```
 
-## Author
+## Sample Usage
 
-Kurdakrx, shopanov.yelnar@gmail.com
+**Init SDK**
+```swift
+//automatically generated token from https://isms.center
+let token = "YOUR_TOKEN";
+self.mCheck = MCheck(aToken: token);
+```
+**Request validation**
+```swift
+// [:phone] phone number
+// [:pin] validation code
+
+let phone = "+77770000000"
+let smsBody = "Your validation code: [:pin]"; // smsBody is optional param, and maybe is null
+weak var weakSelf = self
+
+self.mCheck.requestValidation(phone: phone, type: .SMS, message: smsBody, callback: {result, error -> Void in
+if (error != nil) {
+return
+}
+
+print(message: "Success, request ID: " + (result?.id)!)
+})
 
 ## License
 
