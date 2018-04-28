@@ -1,0 +1,6 @@
+framework module MCheckSwift {
+  umbrella header "MCheckSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

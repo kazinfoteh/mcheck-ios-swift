@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MCheckSwift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MCheckSwift.'
+  s.summary          = 'mCheck SDK for IOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+mCheck SDK for IOS let you integrate the mobile phone number validation API in mobile devices.
                        DESC
 
-  s.homepage         = 'https://github.com/Kurdakrx/MCheckSwift'
+  s.homepage         = 'https://github.com/kazinfoteh/mcheck-ios-swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kurdakrx' => 'shopanov.yelnar@gmail.com' }
-  s.source           = { :git => 'https://github.com/Kurdakrx/MCheckSwift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kazinfoteh/mcheck-ios-swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
